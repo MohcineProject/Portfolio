@@ -6,9 +6,9 @@
 }
 
 :root {
-  --color-primary: #191d2b ;
-  --color-secondary: #27AE60 ;
-  --color-white: #FFFFFF ;
+  --color-primary: #191d2b;
+  --color-secondary: #27AE60;
+  --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey-0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -16,8 +16,9 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
-  --color-grey-6: #12181b ;
-  --br-sm-2: 14px ;
+  --color-grey-6: #12181b;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3) ;
+  --br-sm-2: 14px;
   --standard-transformation: all .4s ease-in-out;
 }
 
@@ -48,12 +49,12 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 2 rem 18rem;
+  padding: 2rem 18rem;
 }
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: var(--standard-transformation);
+  transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
 
@@ -82,7 +83,7 @@ section {
   transform: translateY(0) scale(1);
 }
 
-.controlls {
+.controls {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -93,7 +94,7 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
-.controlls .control {
+.controls .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
@@ -102,4 +103,11 @@ section {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.controls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
