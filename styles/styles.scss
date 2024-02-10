@@ -66,24 +66,37 @@ section {
 .sec1{
     display: none; 
        transform: translateY(0) scale(1); 
+       background-color: #27AE60;
     } 
 .sec2{
     display: none; 
        transform: translateY(0) scale(1); 
+       background-color: #27AEde;
     }
 .sec3{
     display: none; 
        transform: translateY(0) scale(1); 
+       background-color: #27AE89;
     }
 .sec4{
     display: none; 
        transform: translateY(0) scale(1); 
+       background-color: #27AEFF;
+    
     }
 .sec5 {
 display: none; 
    transform: translateY(0) scale(1); 
+   background-color: #27AE79;
 }
+.active-btn {
+    background-color: var(--color-secondary)!important;
+    transition: var(--standard-transformation);
+    i {
 
+    color: var(--color-white)!important;
+    }
+}
 .controls {
     position: fixed;
     z-index: 10;
