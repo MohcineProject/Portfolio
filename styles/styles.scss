@@ -203,6 +203,9 @@ section {
 
 
 /*independent components*/
+
+
+
 .main-btn {
 
     border-radius: 30px;
@@ -214,9 +217,35 @@ section {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
+    width: 60%;
     .btn-text{
         padding: 0 2rem;
     }
-
+    .btn-icon {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1 rem;
+        scale: 1.3;
+        
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right : 0  ; 
+        transform : translateX(100%) ; 
+        transition : var(--standard-transformation) ; 
+        z-index: -1;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            height: 100%;
+            transform: translateX(0);
+            background-color: var(--color-secondary);
+        }
+    }
 }
