@@ -44,3 +44,16 @@ function PageTransition(){
 
 PageTransition() ; 
 
+function updateSkills() {
+    const percentages = document.querySelectorAll(".prog.text") ;
+    console.log(percentages) ; 
+    const progresses = document.querySelectorAll(".progress") ; 
+    console.log(progresses) ; 
+    
+    for (let i = 0; i < progresses.length ; i++) {
+        progresses[i].children[0].style.width = percentages[i].innerHTML ;
+    }
+    
+}
+
+updateSkills() ;
