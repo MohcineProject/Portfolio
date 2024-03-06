@@ -309,6 +309,78 @@ section {
     }
 }
 
+
+
+.stat-title{
+
+text-transform: uppercase;
+font-size: 1.4rem;
+text-align: center;
+padding: 3.5rem ;
+position: relative ;
+
+&::before{
+    content: "";
+    position: absolute;
+    top: 2rem ; 
+    width: 100%;
+    transform: translateX(-42%);
+    height: 2px;
+    background-color: var(--color-grey-0);
+    
+}
+}
+.time-line {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    
+    .timeline-item {
+        position: relative;
+        padding-left: 3rem; 
+        border-left: 1px solid var(--color-grey-5);
+        .t1-icon{
+            position: absolute;
+            left: -27px;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-secondary);
+            i{
+                font-size: 1.3rem;
+            }
+        }
+        .t1-duration {
+            padding: .2rem .6rem;
+            background-color: var(--color-grey-5);
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+            padding: 1rem 0; 
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 600;
+            span{
+                color: var(--color-grey-2);
+                font-weight: 500;
+                font-size: 1.2rems;
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+        }
+    }
+}
+
+
 /*independent components*/
 
 
