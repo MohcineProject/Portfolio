@@ -390,6 +390,7 @@ position: relative ;
         padding-top: 2rem;
         padding-bottom: 0.5rem;
         .general-image{
+
             img{
                 width: 100%;
                 height: 100%;
@@ -398,6 +399,30 @@ position: relative ;
                 &:hover{
                     transform: scale(1.1) ; 
                     border: var(--color-grey-2) 4px solid;
+                }
+                
+               
+            }
+            .source-not-available {
+                position: relative;
+               
+                &::before{
+                    content: 'Source Not Available';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--color-secondary);
+                    color: var(--color-grey-0);
+                    text-align: center;                    
+                    z-index: 2;
+                    transition: var(--standard-transformation);
+                }
+                &:hover{
+                    &::before{
+                        transform: translateY(10%);
+                    }
                 }
             }
         }

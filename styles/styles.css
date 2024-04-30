@@ -384,6 +384,25 @@ section {
   transform: scale(1.1);
   border: var(--color-grey-2) 4px solid;
 }
+.general-body .general-item .general-image .source-not-available {
+  position: relative;
+}
+.general-body .general-item .general-image .source-not-available::before {
+  content: "Source Not Available";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  color: var(--color-grey-0);
+  text-align: center;
+  z-index: 2;
+  transition: var(--standard-transformation);
+}
+.general-body .general-item .general-image .source-not-available:hover::before {
+  transform: translateY(10%);
+}
 .general-body .general-item .general-description {
   color: var(--color-grey-2);
   transition: var(--standard-transformation);
