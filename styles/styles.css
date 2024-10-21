@@ -314,8 +314,8 @@ section {
   content: "";
   position: absolute;
   top: 2rem;
+  left: 0;
   width: 100%;
-  transform: translateX(-42%);
   height: 2px;
   background-color: var(--color-grey-0);
 }
